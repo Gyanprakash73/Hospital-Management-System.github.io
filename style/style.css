@@ -1,0 +1,231 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Nav menu*/
+.navbar{
+    width: 100%;
+}
+.nav-bg{
+    background: #0082e6;
+}
+.brand-colors{
+    font-weight: bold;
+}
+.item-colors{
+    color: white;
+    padding: 15px;
+    font-size: 22px;
+    font-family: calibri;
+}
+.item-colors:hover{
+    color: #0a2b4d;
+    text-decoration: none;
+}
+.navbar-nav{
+    margin-top: 10px;
+}
+#check{
+    display: none;
+}
+/* **************** Menu icon Design **************** */
+.menu-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;  
+    float: right;
+    margin-top: 5px;
+    background: #0082e6;
+    display: none;
+}
+.menu-btn_burger{
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .3s ease-in-out;
+}
+.menu-btn_burger::before,
+.menu-btn_burger::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before{
+    transform: translateY(-10px);
+}
+.menu-btn_burger::after{
+    transform: translateY(10px);
+}
+/* **************** Menu icon Design-X Format **************** */
+.menu-btn.open .menu-btn_burger{
+    transform: translateX(50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn_burger::before{
+    transform: rotate(-45deg) translate(-35px, -35px);
+}
+.menu-btn.open .menu-btn_burger::after{
+    transform: rotate(45deg) translate(-35px, 35px);
+}
+
+/* Salider */
+.carousel{
+    width: 100%;
+    top: 57px;
+    z-index: -1;
+    float: left;
+}
+.carousel-item img{
+    height: 500px;
+}
+.carousel-caption h2{
+    color: rgb(233, 32, 32);
+}
+.carousel-caption .btn:hover{
+    color: #03111f; 
+    cursor: pointer !important;    
+}
+.carousel-caption .btn:focus{
+    box-shadow: none;
+}
+
+/* Card */
+.card-size{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    float: left;
+    margin-top: 80px;
+}
+.card-this{  
+    height: 520px;
+    border:5px solid #ccc;    
+    box-shadow:0px 0px 15px black;  
+    float: left;
+}
+.card-title{
+    padding: 10px;
+    text-align: center;
+    background-color: #aaa5a5d0;
+}
+.card-body .btn:hover{
+    color: #03111f;
+    cursor: pointer !important;    
+}
+.card-body .btn:focus{
+    box-shadow: none;
+}
+
+/* ******** Footer ******** */
+.page-footer{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    float: left;
+    margin-top: 10px;
+}
+.container-fluid{
+    background-color: #03111f;   
+}
+
+/* Footer First-Section */
+.row{
+    padding: 50px;
+}
+.row h5{
+    color: white;
+    padding-top: 20px;
+}
+.col-md-4 p{
+    color: white;
+}
+.col-md-4 .list-size li i{
+    color: white;
+    font-size: 25px;
+}
+.col-md-4 .list-size li a{
+    font-size: 19px;
+}
+.col-md-4 .socials a{
+    border: 1px solid gray;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    color: white;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.col-md-4 .socials a:hover{
+    border: 1px solid white;
+    color: white;
+    transition: all .3s;
+}
+
+/* Footer Second-Section */
+.col-md-4 .list-unstyled{
+    line-height: 30px;
+}
+.col-md-4 .list-unstyled li a{
+    color: white;
+    transition: all .3s;
+}
+.col-md-4 .list-unstyled li a:hover{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: all .3s;
+}
+
+/* Footer Third-Section */
+.col-md-4 .form-group label{
+    color: white;
+}
+.col-md-4 .form-group .form-control{
+    background-color: #272727;
+    border: none;
+    
+}
+.col-md-4 .form-group .form-control:focus{
+    background-color: #1a1a1a;
+    box-shadow: none;
+}
+.col-md-4 .btn-big{
+   background-color: #006669; 
+   color: white;
+   float: right;
+}
+.col-md-4 .btn-big:focus{
+    box-shadow: none;
+}
+
+/* Footer Copyrigt-Section */
+.footer-copyright{
+    background-color: #010a13;
+}
+.footer-copyright{
+    color: white;
+}
+.footer-copyright a{
+    color: white;
+}
+.footer-copyright a:hover{
+    color: white;
+    text-decoration: none;
+}
